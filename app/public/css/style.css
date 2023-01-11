@@ -7,3 +7,7 @@ nav {
     background-color: var(--background-color);
     color: var(--color);
 }
+
+nav > div > a > span {
+    color:var(--color)
+}
