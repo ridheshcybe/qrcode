@@ -1,0 +1,9 @@
+:root{
+    --background-color: rgb(33,37,41);
+    --color:white
+}
+
+nav {
+    background-color: var(--background-color);
+    color: var(--color);
+}
