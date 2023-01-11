@@ -3,9 +3,12 @@
     --color:white
 }
 
-nav {
+.black {
     background-color: var(--background-color);
-    color: var(--color);
+}
+
+.line{
+    padding: 16px;
 }
 
 nav > div > a > span {
