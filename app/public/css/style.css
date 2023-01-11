@@ -9,5 +9,5 @@ nav {
 }
 
 nav > div > a > span {
-    color:var(--color)
+    color: var(--color)
 }
