@@ -1,16 +1,4 @@
-:root{
-    --background-color: rgb(33,37,41);
-    --color:white
-}
-
-.black {
-    background-color: var(--background-color);
-}
 
 .line{
     padding: 16px;
-}
-
-nav > div > a > span {
-    color: var(--color)
 }
