@@ -5,10 +5,11 @@ const path = require("path");
 const app = express();
 const port = process.env.PORT || process.env.port || 8080;
 
+app.set("view engine", "ejs");
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./public/index.html"));
+  res.render("index.ejs");
 });
 
 app.listen(port, () => {
