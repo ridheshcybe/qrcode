@@ -19,15 +19,17 @@
       <div class="text">
         <p id="remove">Type in content to generate QR code:</p>
         <div class="input-panel">
-          <input class="user" type="text" placeholder="i.e. hi" />
+          <input class="user" type="text" placeholder="i.e. hi" id="input" />
           <div class="bar"></div>
         </div>
       </div>
-      <div class="QRplace"></div>
+      <div class="QRplace" id="qr"></div>
     </section>
 
     <%- include("../partials/footer.ejs") %>
 
+      <script src="/js/qrcode.js"></script>
+      <script src="/js/wifi.js"></script>
       <script src="https://kit.fontawesome.com/f95e1c14d2.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
