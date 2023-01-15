@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-  <body>
-    <%- include("../partials/navbar") %>
+<body>
+  <%- include("../partials/navbar") %>
 
-      <div class="text-secondary px-4 pt-5 pb-2 text-center black">
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button id="wifi" type="button" class="btn btn-outline-info
+    <div class="text-secondary px-4 pt-5 pb-2 text-center black">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button id="wifi" type="button" class="btn btn-outline-info
             btn-lg
             px-4
             me-sm-3 fw-bold">
-            <i class="fa-solid fa-wifi"></i>&nbsp;WIFI
-          </button>
+          <i class="fa-solid fa-wifi"></i>&nbsp;WIFI
+        </button>
 
-          <button id="text" type="button" class="btn btn-outline-info btn-lg
+        <button id="text" type="button" class="btn btn-outline-info btn-lg
             px-4
             me-sm-3 fw-bold">
-            <i class="fa-solid fa-keyboard"></i>&nbsp;Text
-          </button>
-          <button id="vcard" type="button" class="btn btn-outline-info btn-lg
+          <i class="fa-solid fa-keyboard"></i>&nbsp;Text
+        </button>
+        <button id="vcard" type="button" class="btn btn-outline-info btn-lg
             px-4
             me-sm-3 fw-bold">
-            <i class="fa-solid fa-address-book"></i>&nbsp;Vcard
-          </button>
-        </div>
-      </div>
-      <div class="text-secondary px-4 pb-5 text-center black">
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button id="email" type="button" class="btn btn-outline-info btn-lg
-            px-4
-            me-sm-3 fw-bold"><i class="fa-solid fa-envelope"></i>&nbsp;Email
-          </button>
-          <button id="btc" type="button" class="btn btn-outline-info btn-lg
-            px-4
-            me-sm-3 fw-bold"><i class="fa-brands fa-bitcoin"></i>&nbsp;Bitcoin
-          </button>
-        </div>
+          <i class="fa-solid fa-address-book"></i>&nbsp;Vcard
+        </button>
       </div>
     </div>
-  </div>
+    <div class="text-secondary px-4 pb-5 text-center black">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button id="email" type="button" class="btn btn-outline-info btn-lg
+            px-4
+            me-sm-3 fw-bold"><i class="fa-solid fa-envelope"></i>&nbsp;Email
+        </button>
+        <button id="btc" type="button" class="btn btn-outline-info btn-lg
+            px-4
+            me-sm-3 fw-bold"><i class="fa-brands fa-bitcoin"></i>&nbsp;Bitcoin
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
 
-  <%- include("../partials/footer.ejs") %>
+    <%- include("../partials/footer.ejs") %>
 
-    <script src="https://kit.fontawesome.com/f95e1c14d2.js"
-      crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-  </body>
+      <script src="https://kit.fontawesome.com/f95e1c14d2.js" crossorigin="anonymous"></script>
+      <script src="./js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
