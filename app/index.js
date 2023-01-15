@@ -12,8 +12,8 @@ app.get("/", (req, res) => {
   res.render("pages/index");
 });
 
-app.get("/wifi", (req, res) => {
-  res.render("pages/wifi");
+app.get("/text", (req, res) => {
+  res.render("pages/text");
 });
 
 app.listen(port, () => {
