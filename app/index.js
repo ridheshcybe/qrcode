@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
   res.render("pages/index");
 });
 
+app.get("/wifi", (req, res) => {
+  res.render("pages/wifi");
+});
+
 app.listen(port, () => {
   console.log(
     `${chalk.greenBright("[Manager]")} ${chalk.green(
