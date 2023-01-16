@@ -17,24 +17,29 @@
 
         <div class="d-flex flex-wrap justify-content-center">
             <div class="form__group field">
-                <input type="input" class="form__field" placeholder="Network name / ssid" id='input' />
+                <input type="input" class="form__field" placeholder="Network name / ssid" id='ssid' />
                 <label for="name" class="form__label">Network name / ssid</label>
             </div>
         </div>
         <div class="d-flex flex-wrap justify-content-center">
             <div class="form__group field">
-                <input type="input" class="form__field" placeholder="password" id='input' />
+                <input type="input" class="form__field" placeholder="password" id='pwd' />
                 <label for="name" class="form__label">password</label>
             </div>
         </div>
         <div class="pt-4 px-5 d-flex flex-wrap justify-content-center">
             <span class="input-group-text">Encryption:</span>
-            <select class="form-select" aria-label="Encryption">
-                <option selected value="none">None</option>
-                <option value="WPA/WPA2">WPA/WPA2</option>
+            <select class="form-select mb-3" aria-label="Encryption" id="enc">
+                <option value="none">None</option>
+                <option selected value="WPA">WPA/WPA2/WPA3</option>
                 <option value="WEP">WEP</option>
             </select>
+            <button id="Gen" type="button" class="btn btn-outline-info btn-lg
+            px-4
+            me-sm-3 fw-bold"><i class="fa-solid fa-rotate"></i>&nbsp;Generate
+            </button>
         </div>
+        <br>
         <br>
         <div class="d-flex flex-wrap justify-content-center">
             <div id="qr"></div>
