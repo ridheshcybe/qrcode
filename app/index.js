@@ -16,6 +16,10 @@ app.get("/text", (req, res) => {
   res.render("pages/text");
 });
 
+app.get("/email", (req, res) => {
+  res.render("pages/email")
+})
+
 app.listen(port, () => {
   console.log(
     `${chalk.greenBright("[Manager]")} ${chalk.green(
