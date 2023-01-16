@@ -18,6 +18,10 @@ app.get("/text", (req, res) => {
 
 app.get("/email", (req, res) => {
   res.render("pages/email")
+});
+
+app.get("/wifi", (req, res) => {
+  res.render("pages/wifi")
 })
 
 app.listen(port, () => {
