@@ -1,0 +1,28 @@
+.line {
+    padding: 16px;
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: #6fcaeb;
+        transition-duration: 1s;
+    }
+    abbr:hover{
+        color: #6fcaeb;
+        transition-duration: 1s;
+    }
+}
+
+@media not all and (hover: hover) {
+    a::after {
+        content: ' (' attr(title) ')';
+    }
+    abbr:after {
+        content: '(' attr(title) ')';
+    }
+}

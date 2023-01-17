@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text</title>
+    <link rel="stylesheet" href="./css/text.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+</head>
+
+<body>
+    <nav class="sticky-sm-top black line">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto
+                text-decoration-none">
+                <span class="fs-4">QRcode</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-wrap justify-content-center">
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="text" id='input' />
+            <label for="name" class="form__label">text</label>
+        </div>
+    </div>
+    <br>
+    <div class="d-flex flex-wrap justify-content-center">
+        <div id="qr"></div>
+    </div>
+
+    <footer class="py-3 my-4 fixed-bottom">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="/" class="nav-link px-2 text-muted"><abbr>Home</abbr></a></li>
+            <li class="nav-item"><a href="/text" class="nav-link px-2 text-muted"><abbr>Text</abbr></a></li>
+            <li class="nav-item"><a href="/wifi" class="nav-link px-2 text-muted"><abbr>Wifi</abbr></a></li>
+            <li class="nav-item"><a href="/email" class="nav-link px-2 text-muted"><abbr>Email</abbr></a></li>
+            <li class="nav-item"><a href="/btc" class="nav-link px-2 text-muted"><abbr>Bitcoin</abbr></a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2023, ridhesh w</p>
+    </footer>
+
+    <script src="./js/qrcode.js"></script>
+    <script src="./js/text.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

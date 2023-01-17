@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="sticky-sm-top black line">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto
+                text-decoration-none">
+                <span class="fs-4">QRcode</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="justify-content-center px-5">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email:</span>
+            <input type="text" id="email" class="form-control" placeholder="Email" aria-label="Email">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Subject:</span>
+            <input class="form-control" id="subject" placeholder="i.e. Hello">
+        </div><br>
+        <div class="input-group">
+            <span class="input-group-text">Message:</span>
+            <input class="form-control" id="message" placeholder="i.e. How are you?">
+        </div>
+        <br>
+        <button id="Gen" type="button" class="btn btn-outline-info btn-lg
+            px-4
+            me-sm-3 fw-bold"><i class="fa-solid fa-rotate"></i>&nbsp;Generate
+        </button><br>
+        <div class="pt-3" id="result"></div>
+    </div>
+
+    <footer class="py-3 my-4 fixed-bottom">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="/" class="nav-link px-2 text-muted"><abbr>Home</abbr></a></li>
+            <li class="nav-item"><a href="/text" class="nav-link px-2 text-muted"><abbr>Text</abbr></a></li>
+            <li class="nav-item"><a href="/wifi" class="nav-link px-2 text-muted"><abbr>Wifi</abbr></a></li>
+            <li class="nav-item"><a href="/email" class="nav-link px-2 text-muted"><abbr>Email</abbr></a></li>
+            <li class="nav-item"><a href="/btc" class="nav-link px-2 text-muted"><abbr>Bitcoin</abbr></a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2023, ridhesh w</p>
+    </footer>
+
+    <script src="./js/qrcode.js"></script>
+    <script src="./js/email.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
