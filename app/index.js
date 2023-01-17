@@ -24,8 +24,8 @@ app.get("/wifi", (req, res) => {
   res.render("pages/wifi")
 });
 
-app.get("/vcard", (req, res) => {
-  res.render("pages/vcard")
+app.get("/btc", (req, res) => {
+  res.render("pages/btc")
 })
 
 app.listen(port, () => {
