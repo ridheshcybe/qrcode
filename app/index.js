@@ -22,6 +22,10 @@ app.get("/email", (req, res) => {
 
 app.get("/wifi", (req, res) => {
   res.render("pages/wifi")
+});
+
+app.get("/vcard", (req, res) => {
+  res.render("pages/vcard")
 })
 
 app.listen(port, () => {
