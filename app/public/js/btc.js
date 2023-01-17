@@ -1,13 +1,10 @@
-// bitcoin:879878979789?amount=0&message=jij\
-
 const cc = document.getElementById("cc");
 const message = document.getElementById("msg");
 const address = document.getElementById("addr");
-const generate = document.getElementById("Gen");
 const amount = document.getElementById("amount");
 
-generate.onclick = () => {
-    let msg = `${address.value}?amount=${amount.value}&message=${msg.value}`
+document.getElementById("Gen").onclick = () => {
+    let msg = `${address.value}?amount=${amount.value}&message=${message.value}`
     switch (cc.value) {
         case "btc":
         default:
