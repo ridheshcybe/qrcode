@@ -7,6 +7,7 @@ const app = express();
 const port = process.env.PORT || process.env.port || 8080;
 
 app.set("view engine", "ejs");
+app.use(helmet.default())
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.get("/", (req, res) => {

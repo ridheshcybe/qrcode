@@ -3,6 +3,11 @@ const message = document.getElementById("msg");
 const address = document.getElementById("addr");
 const amount = document.getElementById("amount");
 
+const qrcode = new QRCode(document.getElementById("qr"), {
+    width: 100,
+    height: 100
+});
+
 document.getElementById("Gen").onclick = () => {
     let msg = `${address.value}?amount=${amount.value}&message=${message.value}`
     switch (cc.value) {
@@ -23,4 +28,5 @@ document.getElementById("Gen").onclick = () => {
             msg = 'dash:' + msg;
             break;
     }
+    qrcode.makeCode(msg || "EXAMPLE")
 }
